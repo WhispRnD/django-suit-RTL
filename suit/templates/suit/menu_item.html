@@ -1,7 +1,7 @@
-{% load i18n %}
+{% load i18n suit_tags %}
 <li class="{{ parent_item.is_active|yesno:' active,' }}{{ parent_item.children|yesno:' has-children,' }}">
     <a href="{{ parent_item.url }}"
-            {{ parent_item.target_blank|yesno:' target=_blank,' }}>{% if suit_layout == 'vertical' %}<i class="{% firstof parent_item.icon 'fa fa-chevron-right' %}"></i>{% endif %}{% trans parent_item.label|capfirst %}
+            {{ parent_item.target_blank|yesno:' target=_blank,' }}>{% if suit_layout == 'vertical' %}<i class="{% firstof parent_item.icon 'fa fa-chevron-left,fa fa-chevron-right'|suit_rtlyesno:request %}"></i>{% endif %}{% trans parent_item.label|capfirst %}
     </a>
     {% if parent_item.children %}
         {% if not parent_item.is_active or suit_layout == 'vertical' %}
