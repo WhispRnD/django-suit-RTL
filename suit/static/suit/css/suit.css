@@ -6134,8 +6134,9 @@ fieldset .form-row label.required:after, fieldset .suit-form .form-group label.r
 
 fieldset .form-row > label, fieldset .suit-form .form-group > label {
     margin: 0;
+    padding-right: 1rem;
     line-height: 1.25rem;
-    text-align: left;
+    text-align: right;
     background-color: #fff;
     padding-top: 1.05rem;
     padding-bottom: 0.9rem;
