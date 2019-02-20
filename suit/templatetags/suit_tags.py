@@ -16,6 +16,16 @@ def suit_conf(name, request):
     value = config.get_config(name, request)
     return mark_safe(value) if isinstance(value, str) else value
 
+@register.filter(name='suit_rtlyesno')
+def suit_rtlyesno(name, request):
+    yes_string,no_string = name.split(',')
+    rtl = config.get_config('rtl', request)
+    return yes_string if rtl else no_string
+
+@register.simple_tag(takes_context=True)
+def suit_rtlswitch(context, yes_string,no_string):
+    rtl = config.get_config('rtl', context['request'])
+    return yes_string if rtl else no_string
 
 @register.filter(name='suit_body_class')
 def suit_body_class(value, request):

@@ -59,6 +59,8 @@ class DjangoSuitConfig(AppConfig):
         # 'fieldsets': {}
     }
 
+    rtl = False
+
     # form_size setting can be overridden in ModelAdmin using suit_form_size parameter
     #
     # Example:
