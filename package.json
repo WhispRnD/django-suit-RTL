@@ -9,5 +9,8 @@
     "gulp-autoprefixer": "^3.1.0",
     "gulp-plumber": "^1.0.1",
     "gulp-sass": "^2.3.2"
+  },
+  "dependencies": {
+    "bootstrap": "github:twbs/bootstrap#v4.0.0-alpha.5"
   }
 }
