@@ -6711,7 +6711,7 @@ fieldset input[type=number], fieldset input[type=date], fieldset input.vIntegerF
 }
 
 .calendarbox > div:first-child a.calendarnav-previous:before {
-    content: "\f053";
+    content: "\f054";
     color: #fff;
 }
 
@@ -6720,7 +6720,7 @@ fieldset input[type=number], fieldset input[type=date], fieldset input.vIntegerF
 }
 
 .calendarbox > div:first-child a.calendarnav-next:before {
-    content: "\f054";
+    content: "\f053";
     color: #fff;
 }
 
